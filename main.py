@@ -6,11 +6,11 @@ app = FastAPI()
 def read_root():
     return {"message": "API está funcionando! Vá para /docs para ver a documentação"}
 
-@app.get("/run-agent/")
+@app.get("/run-agent")
 def run_agent():
     return {"message": "Agente de IA em execução!"}
 
-@app.post("/run-agent/")
+@app.post("/run-agent")
 async def run_agent_post(request: Request):
     try:
         data = await request.json()
