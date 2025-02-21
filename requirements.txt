@@ -1,6 +1,6 @@
 ﻿fastapi
 uvicorn
-nopenai
-npymongo
-nrequests
-npython-dotenv
+openai
+pymongo
+requests
+python-dotenv
